@@ -1,0 +1,108 @@
+/**
+ * KolmoTek Instruments Website - Styles
+ * @authors R.CHARAN & S ANANDH
+ * @company Innosify Pvt Ltd
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Prata&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==================== BASE STYLES ==================== */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply antialiased text-gray-600 bg-white;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+    min-width: 320px;
+  }
+
+
+  ::selection {
+    @apply bg-brand-100 text-brand-900;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-brand-900 font-bold tracking-tight;
+  }
+
+  img {
+    @apply rounded-xl;
+  }
+}
+
+/* ==================== UTILITIES ==================== */
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-600 to-accent-600;
+  }
+
+  /* Refined Glass Effect */
+  .glass {
+    @apply bg-white/80 backdrop-blur-md border border-white/40 shadow-sm;
+  }
+
+  /* Specialized Card - "Overkilling Professional" */
+  .card-pro {
+    @apply bg-white rounded-xl border border-gray-100 transition-all duration-300;
+    @apply hover:border-brand-200 hover:shadow-lg hover:shadow-brand-900/5;
+  }
+
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-1;
+  }
+
+  .section-padding {
+    @apply py-16 sm:py-20;
+  }
+
+  .container-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* ==================== BUTTONS ==================== */
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2;
+    @apply px-5 py-2.5 rounded-lg font-semibold text-sm;
+    @apply bg-brand-700 text-white;
+    @apply hover:bg-brand-800 transition-all duration-300;
+    @apply shadow-md shadow-brand-900/10 hover:shadow-lg hover:shadow-brand-900/20;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2;
+    @apply px-5 py-2.5 rounded-lg font-medium text-sm;
+    @apply text-gray-600 bg-gray-50 border border-gray-200;
+    @apply hover:bg-white hover:text-brand-700 hover:border-brand-200;
+    @apply transition-all duration-200;
+  }
+}
+
+/* ==================== SCROLLBAR ==================== */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-50;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full hover:bg-gray-400;
+}
