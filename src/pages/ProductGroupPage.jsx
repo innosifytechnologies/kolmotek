@@ -90,11 +90,11 @@ const ProductGroupPage = () => {
               to={`/ProductGroup/${group.id}`}
               className="group bg-white rounded-xl border border-gray-100 p-3 flex flex-col sm:flex-row items-center sm:items-start gap-4 hover:border-brand-200 hover:shadow-lg hover:shadow-brand-900/5 transition-all duration-300"
             >
-              <div className="w-full sm:w-48 h-40 shrink-0 overflow-hidden rounded-lg border border-gray-100 relative bg-white">
+              <div className="w-full sm:w-48 aspect-[4/3] sm:h-40 shrink-0 overflow-hidden rounded-lg border border-gray-100 relative bg-gray-50">
                 <img
                   src={group.image}
                   alt={group.name}
-                  className="w-full h-full object-contain p-1 group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-brand-900/0 group-hover:bg-brand-900/5 transition-colors duration-300" />
               </div>
