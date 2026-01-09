@@ -77,7 +77,7 @@ const ProductGroupPageData = [
 const ProductGroupPage = () => {
   return (
     <div className="bg-gray-50 min-h-screen pt-20 lg:pt-24 pb-10 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-2 text-center">
           <span className="text-brand-600 text-[10px] font-bold uppercase tracking-widest block mb-0.5">Our Solutions</span>
           <Title text1="Product" text2="Categories" />
