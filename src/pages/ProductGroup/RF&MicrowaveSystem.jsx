@@ -38,11 +38,11 @@ const RFMicrowaveSystemsPage = () => {
               to={`/RFMicrowaveInstruments/${product.id}`}
               className="group flex flex-col md:flex-row bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:border-brand-200"
             >
-              <div className="md:w-1/3 h-48 sm:h-64 md:h-auto relative overflow-hidden bg-gray-50 border-b md:border-b-0 md:border-r border-gray-100 p-4 sm:p-6">
+              <div className="md:w-1/3 aspect-[4/3] relative overflow-hidden bg-gray-50 border-b md:border-b-0 md:border-r border-gray-100">
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
 
