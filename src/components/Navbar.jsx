@@ -57,7 +57,7 @@ const Navbar = () => {
     <>
       {/* Top Bar - Clean & Minimal */}
       <div className="hidden lg:block bg-gradient-to-r from-violet-500 to-sky-400 text-white py-1.5 border-b border-white/20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 flex justify-between items-center text-xs font-semibold">
+        <div className="mx-auto px-4 sm:px-6 lg:px-12 flex justify-between items-center text-xs font-semibold">
           <p className="flex items-center gap-2 tracking-wide opacity-95">
             <span className="w-1.5 h-1.5 bg-white rounded-full animate-pulse shadow-sm shadow-white/50"></span>
             Precision Instrumentation for Advanced Research
@@ -76,7 +76,7 @@ const Navbar = () => {
       {/* Main Navbar - Clean White with Crisp Borders */}
       <nav className={`sticky top-0 z-50 transition-all duration-300 bg-white border-b ${scrolled ? 'border-gray-200 shadow-sm h-14' : 'border-gray-100 h-16'
         }`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 h-full flex justify-between items-center">
+        <div className="mx-auto px-4 sm:px-6 lg:px-12 h-full flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex-shrink-0 group flex items-center gap-3">
             <img src={assets.logo} alt="Logo" className={`transition-all duration-300 ${scrolled ? 'w-8 h-8' : 'w-9 h-9'}`} />
