@@ -77,7 +77,7 @@ const ProductGroupPageData = [
 const ProductGroupPage = () => {
   return (
     <div className="bg-gray-50 min-h-screen pt-20 lg:pt-24 pb-10 transition-colors duration-300">
-      <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-2 text-center">
           <span className="text-brand-600 text-[10px] font-bold uppercase tracking-widest block mb-0.5">Our Solutions</span>
           <Title text1="Product" text2="Categories" />
@@ -90,7 +90,7 @@ const ProductGroupPage = () => {
               to={`/ProductGroup/${group.id}`}
               className="group bg-white rounded-xl border border-gray-100 p-3 flex flex-col sm:flex-row items-center sm:items-start gap-4 hover:border-brand-200 hover:shadow-lg hover:shadow-brand-900/5 transition-all duration-300"
             >
-              <div className="w-full sm:w-48 aspect-[4/3] sm:h-40 shrink-0 overflow-hidden rounded-lg border border-gray-100 relative bg-gray-50">
+              <div className="w-full sm:w-64 aspect-[4/3] sm:h-48 shrink-0 overflow-hidden rounded-lg border border-gray-100 relative bg-gray-50">
                 <img
                   src={group.image}
                   alt={group.name}
