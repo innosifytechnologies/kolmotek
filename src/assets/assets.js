@@ -226,7 +226,6 @@ export const assets = {
   postDisasterRecovery,
   climateChangeMitigation,
   communityPreparedness,
-  structuralHealthMonitoring,
   bridgeMonitoring,
   buildingHealth,
   damSafety,
