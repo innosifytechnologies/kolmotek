@@ -1,0 +1,12 @@
+# Robots.txt for KolmoTek
+# Allow indexing of the main website only, disallow subpages
+
+User-agent: *
+Allow: /$
+Disallow: /
+
+# Block all crawlers from indexing subpages
+# Only the homepage (/) will be indexed
+
+# Sitemap (optional - remove if you don't have one)
+# Sitemap: https://yourdomain.com/sitemap.xml
