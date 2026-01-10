@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
-import NoIndex from "./components/NoIndex";
 
 // Fallback component for Suspense
 const Loading = () => (
@@ -70,7 +69,6 @@ const App = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <ScrollToTop />
-      <NoIndex />
       <Navbar />
       <main className="flex-1 bg-white">
         <Suspense fallback={<Loading />}>
